@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.predator.foodholic.MainActivity">
+
+    <TextView
+        android:id="@+id/quantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/items"
+        android:layout_centerHorizontal="true"
+        android:text="@string/quantity"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/quantity"
+        android:layout_marginStart="35dp"
+        android:layout_alignBaseline="@id/items"
+        android:text="@string/price"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/items"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/items"
+        android:textSize="24sp" />
+
+    <CheckBox
+        android:id="@+id/chilli"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/items"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="21dp"
+        android:text="@string/chilli_potato" />
+
+    <CheckBox
+        android:id="@+id/coke"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/chilli"
+        android:layout_below="@+id/chilli"
+        android:layout_marginTop="21dp"
+        android:text="@string/coke" />
+
+    <CheckBox
+        android:id="@+id/rice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/coke"
+        android:layout_marginTop="21dp"
+        android:layout_alignStart="@id/chilli"
+        android:text="@string/fried_rice"
+        />
+
+    <CheckBox
+        android:id="@+id/shake"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/chilli"
+        android:layout_below="@+id/rice"
+        android:layout_marginTop="21dp"
+        android:text="@string/mango_shake" />
+
+    <EditText
+        android:id="@+id/q2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/coke"
+        android:layout_alignBaseline="@id/coke"
+        android:layout_alignStart="@id/quantity"
+        android:ems="4"
+        android:hint="@string/number"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/q1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/quantity"
+        android:layout_alignBaseline="@id/chilli"
+        android:layout_below="@id/quantity"
+        android:ems="4"
+        android:hint="@string/number"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/q3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/quantity"
+        android:layout_below="@id/q2"
+        android:layout_alignBaseline="@id/rice"
+        android:ems="4"
+        android:hint="@string/number"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/q4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/quantity"
+        android:layout_below="@id/q3"
+        android:layout_alignBaseline="@id/shake"
+        android:ems="4"
+        android:hint="@string/number"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/_60"
+        android:textSize="20sp"
+        android:layout_alignBaseline="@+id/q1"
+        android:layout_alignBottom="@+id/q1"
+        android:layout_alignStart="@+id/price" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/q2"
+        android:layout_alignBottom="@+id/q2"
+        android:layout_alignStart="@+id/price"
+        android:text="@string/_40"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/_100"
+        android:textSize="20sp"
+        android:layout_alignBaseline="@+id/q3"
+        android:layout_alignBottom="@+id/q3"
+        android:layout_alignStart="@+id/price" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/shake"
+        android:layout_alignBottom="@+id/shake"
+        android:layout_alignStart="@+id/price"
+        android:text="@string/_80"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/q4"
+        android:layout_marginTop="15dp"
+        android:text="@string/submit"
+        android:textSize="18sp"
+        android:onClick="btnOrder"/>
+</RelativeLayout>

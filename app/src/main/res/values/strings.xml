@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Foodholic</string>
+    <string name="_100">100</string>
+    <string name="_40">40</string>
+    <string name="_60">60</string>
+    <string name="_80">80</string>
+    <string name="chilli_potato">Chilli Potato</string>
+    <string name="coke">Coke</string>
+    <string name="fried_rice">Fried Rice</string>
+    <string name="items">Items</string>
+    <string name="mango_shake">Mango
+        Shake</string>
+    <string name="number">Number</string>
+    <string name="price">Price</string>
+    <string name="quantity">Quantity</string>
+    <string name="submit">SUBMIT</string>
+</resources>
